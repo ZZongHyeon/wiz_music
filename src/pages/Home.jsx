@@ -328,69 +328,71 @@ const Home = () => {
 
       {/* 하단 고정 네비게이션 바 */}
       <nav className="bottom-nav">
-        <a href="tel:010-5687-3749" className="bottom-nav-item">
-          <svg
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
+        <div className="bottom-nav-inner">
+          <a href="tel:010-5687-3749" className="bottom-nav-item">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>전화</span>
+          </a>
+          <a
+            href="https://map.naver.com/p/entry/place/1892006808?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=128.9967365&lat=35.3160460"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bottom-nav-item"
           >
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-          </svg>
-          <span>전화</span>
-        </a>
-        <a
-          href="https://map.naver.com/p/entry/place/1892006808?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=128.9967365&lat=35.3160460"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bottom-nav-item"
-        >
-          <svg
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>위치</span>
+          </a>
+          <a
+            href="https://www.instagram.com/js_wiz_music/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bottom-nav-item"
           >
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-            <circle cx="12" cy="10" r="3"></circle>
-          </svg>
-          <span>위치</span>
-        </a>
-        <a
-          href="https://www.instagram.com/js_wiz_music/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bottom-nav-item"
-        >
-          <svg
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span>인스타그램</span>
+          </a>
+          <a
+            href="https://open.kakao.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bottom-nav-item"
           >
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-          </svg>
-          <span>인스타</span>
-        </a>
-        <a
-          href="https://open.kakao.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bottom-nav-item"
-        >
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 3C6.48 3 2 6.58 2 11c0 2.8 1.86 5.25 4.64 6.67-.15.56-.54 2.03-.62 2.35-.1.39.14.39.3.28.12-.08 1.95-1.32 2.75-1.86.61.09 1.24.14 1.88.14 5.52 0 10-3.58 10-8s-4.48-8-10-8z" />
-          </svg>
-          <span>카카오톡</span>
-        </a>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 3C6.48 3 2 6.58 2 11c0 2.8 1.86 5.25 4.64 6.67-.15.56-.54 2.03-.62 2.35-.1.39.14.39.3.28.12-.08 1.95-1.32 2.75-1.86.61.09 1.24.14 1.88.14 5.52 0 10-3.58 10-8s-4.48-8-10-8z" />
+            </svg>
+            <span>카카오톡</span>
+          </a>
+        </div>
       </nav>
     </div>
   );
