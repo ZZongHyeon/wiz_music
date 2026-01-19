@@ -1,0 +1,753 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  color: #1a1a1a;
+  padding-bottom: 80px;
+}
+
+/* ========================================
+   헤더
+======================================== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* ========================================
+   히어로 섹션
+======================================== */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 900px;
+  overflow: hidden;
+}
+
+.hero-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.hero-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 10px 24px;
+  border-radius: 30px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-title {
+  font-size: 64px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.hero-description {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: -0.3px;
+}
+
+/* ========================================
+   메인 콘텐츠
+======================================== */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 24px;
+}
+
+/* ========================================
+   섹션 공통 스타일
+======================================== */
+.section-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #888888;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+}
+
+/* ========================================
+   원장 소개 섹션
+======================================== */
+.director-section {
+  margin-bottom: 120px;
+}
+
+.director-card {
+  text-align: center;
+  padding: 64px 40px;
+  background-color: #fafafa;
+  border-radius: 24px;
+}
+
+.director-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888888;
+  background-color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e8e8e8;
+}
+
+.director-name {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+  margin-bottom: 28px;
+}
+
+.director-quote {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #666666;
+  font-style: italic;
+}
+
+/* ========================================
+   학원 특징 섹션
+======================================== */
+.features-section {
+  margin-bottom: 120px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: #fafafa;
+  border-radius: 20px;
+  padding: 36px 28px;
+  text-align: center;
+}
+
+.feature-card:hover {
+  background-color: #f5f5f5;
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  letter-spacing: -0.3px;
+}
+
+.feature-desc {
+  font-size: 14px;
+  color: #888888;
+  line-height: 1.5;
+}
+
+/* ========================================
+   프로그램 섹션
+======================================== */
+.programs-section {
+  margin-bottom: 120px;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.program-card {
+  background-color: #fafafa;
+  border-radius: 24px;
+  padding: 40px 32px;
+  border: 1px solid #f0f0f0;
+}
+
+.program-card-primary {
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
+}
+
+.program-card-primary .program-badge {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.program-card-primary .program-title {
+  color: #ffffff;
+}
+
+.program-card-primary .program-desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.program-card-primary .program-list li {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.program-card-primary .program-list li::before {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.program-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #888888;
+  background-color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e8e8e8;
+}
+
+.program-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.program-desc {
+  font-size: 15px;
+  color: #888888;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+.program-list {
+  list-style: none;
+}
+
+.program-list li {
+  font-size: 15px;
+  color: #555555;
+  padding: 10px 0;
+  padding-left: 20px;
+  position: relative;
+  border-top: 1px solid #e8e8e8;
+}
+
+.program-card-primary .program-list li {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.program-list li:last-child {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.program-card-primary .program-list li:last-child {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.program-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #cccccc;
+  border-radius: 50%;
+}
+
+/* ========================================
+   위치 섹션
+======================================== */
+.location-section {
+  margin-bottom: 0;
+}
+
+.location-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 64px 40px;
+  background-color: #fafafa;
+  border-radius: 24px;
+}
+
+.location-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+
+.location-info {
+  margin-bottom: 32px;
+}
+
+.location-address {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.location-address-sub {
+  font-size: 15px;
+  color: #888888;
+}
+
+.location-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 40px;
+  background-color: #03c75a;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 14px;
+}
+
+.location-button:hover {
+  background-color: #02b350;
+}
+
+/* ========================================
+   푸터
+======================================== */
+.footer {
+  background-color: #1a1a1a;
+  padding: 64px 24px 100px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-info {
+  margin-bottom: 24px;
+}
+
+.footer-info p {
+  font-size: 14px;
+  color: #888888;
+  margin-bottom: 6px;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  color: #555555;
+}
+
+/* ========================================
+   하단 고정 네비게이션
+======================================== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  background-color: #ffffff;
+  border-top: 1px solid #e8e8e8;
+  padding: 12px 0;
+  padding-bottom: calc(12px + env(safe-area-inset-bottom));
+}
+
+.bottom-nav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 0;
+  color: #555555;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.bottom-nav-item:hover,
+.bottom-nav-item:active {
+  color: #1a1a1a;
+}
+
+/* ========================================
+   반응형 - 데스크탑 대형
+======================================== */
+@media (min-width: 1400px) {
+  .main-content {
+    max-width: 1400px;
+    padding: 120px 48px;
+  }
+
+  .hero-title {
+    font-size: 80px;
+  }
+
+  .section-title {
+    font-size: 42px;
+  }
+}
+
+/* ========================================
+   반응형 - 태블릿
+======================================== */
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .hero-title {
+    font-size: 52px;
+  }
+}
+
+/* ========================================
+   반응형 - 모바일
+======================================== */
+@media (max-width: 768px) {
+  .home-container {
+    padding-bottom: 72px;
+  }
+
+  .header-inner {
+    padding: 14px 20px;
+  }
+
+  .logo-text {
+    font-size: 16px;
+  }
+
+  .hero-section {
+    height: 85vh;
+    min-height: 500px;
+    max-height: 500px;
+  }
+
+  .hero-badge {
+    font-size: 10px;
+    letter-spacing: 3px;
+    padding: 8px 18px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .main-content {
+    padding: 64px 20px;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .director-section {
+    margin-bottom: 80px;
+  }
+
+  .director-card {
+    padding: 48px 24px;
+    border-radius: 20px;
+  }
+
+  .director-name {
+    font-size: 32px;
+  }
+
+  .director-quote {
+    font-size: 16px;
+  }
+
+  .features-section {
+    margin-bottom: 80px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .feature-card {
+    padding: 28px 20px;
+    border-radius: 16px;
+  }
+
+  .feature-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+  }
+
+  .feature-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .feature-title {
+    font-size: 15px;
+  }
+
+  .feature-desc {
+    font-size: 13px;
+  }
+
+  .programs-section {
+    margin-bottom: 80px;
+  }
+
+  .program-card {
+    padding: 32px 24px;
+    border-radius: 20px;
+  }
+
+  .program-title {
+    font-size: 22px;
+  }
+
+  .location-card {
+    padding: 48px 24px;
+    border-radius: 20px;
+  }
+
+  .location-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+  }
+
+  .location-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .location-address {
+    font-size: 20px;
+  }
+
+  .location-button {
+    width: 100%;
+    justify-content: center;
+    padding: 16px 32px;
+    border-radius: 12px;
+  }
+
+  .footer {
+    padding: 48px 20px 88px;
+  }
+
+  .bottom-nav {
+    padding: 10px 0;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom));
+  }
+
+  .bottom-nav-item {
+    font-size: 10px;
+  }
+
+  .bottom-nav-item svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* ========================================
+   반응형 - 소형 모바일
+======================================== */
+@media (max-width: 400px) {
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .director-name {
+    font-size: 28px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    padding: 24px 20px;
+  }
+
+  .feature-icon {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .feature-card > div:last-child {
+    flex: 1;
+  }
+}
