@@ -226,7 +226,7 @@ body {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -277,7 +277,6 @@ body {
 .features-grid,
 .programs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
@@ -543,10 +542,6 @@ body {
    반응형 - 태블릿
 ======================================== */
 @media (max-width: 1024px) {
-  .features-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .programs-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -740,31 +735,23 @@ body {
   .section-title {
     font-size: 24px;
   }
-
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .feature-card {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    text-align: left;
-    padding: 24px 20px;
-  }
-
-  .feature-icon {
-    margin-bottom: 0;
-    flex-shrink: 0;
-  }
-
-  .feature-card > div:last-child {
-    flex: 1;
-  }
 }
 @media (min-width: 1600px) {
   .main-content {
     max-width: 1440px;
     padding: 120px 48px;
+  }
+}
+@media (max-width: 480px) {
+  .feature-card {
+    padding: 20px 16px;
+  }
+
+  .feature-title {
+    font-size: 14px;
+  }
+
+  .feature-desc {
+    font-size: 12px;
   }
 }
