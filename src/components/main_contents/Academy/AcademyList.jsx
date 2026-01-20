@@ -1,11 +1,13 @@
-import UserIcon from "../../icon_components/UserIcon";
-import BookIcon from "../../icon_components/BookIcon";
-import AwardIcon from "../../icon_components/AwardIcon";
-import PhoneIcon from "../../icon_components/PhoneIcon";
-import MessageIcon from "../../icon_components/MessageIcon";
-import PlayIcon from "../../icon_components/PlayIcon";
-import CalendarIcon from "../../icon_components/CalendarIcon";
-import VideoIcon from "../../icon_components/VideoIcon";
+import {
+  UserIcon,
+  BookIcon,
+  AwardIcon,
+  PhoneIcon,
+  MessageIcon,
+  PlayIcon,
+  CalendarIcon,
+  VideoIcon,
+} from "../../icon_components";
 
 const academyList = [
   {

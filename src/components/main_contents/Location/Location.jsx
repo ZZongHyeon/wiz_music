@@ -1,5 +1,4 @@
-import LocationIcon from "../../icon_components/LocationIcon";
-import ArrowIcon from "../../icon_components/ArrowIcon";
+import { MapPinIcon, ArrowIcon } from "../../icon_components";
 
 const Location = () => {
   return (
@@ -11,7 +10,7 @@ const Location = () => {
 
       <div className="location-card">
         <div className="location-icon">
-          <LocationIcon size={32} />
+          <MapPinIcon size={32} />
         </div>
 
         <div className="location-info">

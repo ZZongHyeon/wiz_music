@@ -1,7 +1,9 @@
-import PhoneIcon from "../icon_components/PhoneIcon";
-import LocationIcon from "../icon_components/LocationIcon";
-import InstagramIcon from "../icon_components/InstagramIcon";
-import KakaoIcon from "../icon_components/KakaoIcon";
+import {
+  PhoneIcon,
+  MapPinIcon,
+  InstagramIcon,
+  KakaoIcon,
+} from "../icon_components";
 
 export const footerNavList = [
   {
@@ -12,7 +14,7 @@ export const footerNavList = [
   {
     label: "위치",
     href: "https://map.naver.com/p/entry/place/1892006808",
-    icon: LocationIcon,
+    icon: MapPinIcon,
     blank: true,
   },
   {

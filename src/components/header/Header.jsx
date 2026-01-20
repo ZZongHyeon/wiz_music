@@ -1,4 +1,4 @@
-import MusicNoteIcon from "../icon_components/MusicNoteIcon";
+import { MusicNoteIcon } from "../icon_components";
 
 const Header = () => {
   return (
