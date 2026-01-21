@@ -1,5 +1,6 @@
 import "./Home.css";
 
+import ScrollToTopButton from "../components/footer/ScrollToTopButton";
 import FooterNav from "../components/footer/FooterNav";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
@@ -25,6 +26,7 @@ const Home = () => {
       </main>
 
       <FooterNav />
+      <ScrollToTopButton />
       <Footer />
     </div>
   );
