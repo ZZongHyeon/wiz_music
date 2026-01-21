@@ -1,5 +1,6 @@
 import AcademyItem from "./AcademyItem";
 import academyList from "./AcademyList";
+import { memo } from "react";
 
 const Academy = () => {
   return (
@@ -23,4 +24,4 @@ const Academy = () => {
   );
 };
 
-export default Academy;
+export default memo(Academy);

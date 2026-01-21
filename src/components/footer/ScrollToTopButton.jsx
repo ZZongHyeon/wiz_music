@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import ArrowUpIcon from "../icon_components/ArrowUpIcon";
 
 const ScrollToTopButton = () => {
@@ -31,4 +31,4 @@ const ScrollToTopButton = () => {
   );
 };
 
-export default ScrollToTopButton;
+export default memo(ScrollToTopButton);

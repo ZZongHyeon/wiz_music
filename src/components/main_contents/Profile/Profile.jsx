@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 const Profile = () => {
   return (
     <>
@@ -19,4 +21,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default memo(Profile);

@@ -1,5 +1,6 @@
 import ProgramItem from "./ProgramItem";
 import { programList } from "./ProgramList";
+import { memo } from "react";
 
 const Program = () => {
   return (
@@ -25,4 +26,4 @@ const Program = () => {
   );
 };
 
-export default Program;
+export default memo(Program);

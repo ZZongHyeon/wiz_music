@@ -26,7 +26,7 @@ const Home = () => {
       </main>
 
       <FooterNav />
-      <ScrollToTopButton />
+
       <Footer />
     </div>
   );

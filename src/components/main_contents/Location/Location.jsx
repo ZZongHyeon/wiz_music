@@ -1,4 +1,5 @@
 import { MapPinIcon, ArrowIcon } from "../../icon_components";
+import { memo } from "react";
 
 const Location = () => {
   return (
@@ -32,4 +33,4 @@ const Location = () => {
   );
 };
 
-export default Location;
+export default memo(Location);
